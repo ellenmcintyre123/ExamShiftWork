@@ -41,7 +41,7 @@ public class ShiftWorker {
         this.shift = shift;
     }
 
-    public String getAge() {
+    public String getAge(String s) {
         return age;
     }
 
@@ -51,11 +51,13 @@ public class ShiftWorker {
 
     @Override
     public String toString() {
-        return "ShiftWorker{" +
-                "name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", shift='" + shift + '\'' +
-                ", age='" + age + '\'' +
-                '}';
-    }
+        return super.toString() +
+            "ShiftWorker{" +
+                    "name='" + name + '\'' +
+                    ", gender='" + gender + '\'' +
+                    ", shift='" + shift + '\'' +
+                    ", age='" + age + '\'' +
+                    '}';
+        }
+
 }
