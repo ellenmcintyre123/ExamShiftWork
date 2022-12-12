@@ -67,7 +67,7 @@ public class ShiftWorker {
 
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter a name", getName());
+        System.out.println("Please enter a name");
         System.out.println("the name you entered");
         System.out.println("Please enter your gender- male, female, non-binary");
         System.out.println("Please enter your shift(day shift is 1, night shift is 2");
