@@ -1,5 +1,8 @@
 package ie.atu;
 
+import java.util.Scanner;
+
+
 public class ShiftWorker {
         private String name;
         private String gender;
@@ -41,7 +44,7 @@ public class ShiftWorker {
         this.shift = shift;
     }
 
-    public String getAge(String s) {
+    public String getAge() {
         return age;
     }
 
@@ -59,5 +62,16 @@ public class ShiftWorker {
                     ", age='" + age + '\'' +
                     '}';
         }
+
+    public void main(String[] args) {
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter a name", getName());
+        System.out.println("the name you entered");
+        System.out.println("Please enter your gender- male, female, non-binary");
+        System.out.println("Please enter your shift(day shift is 1, night shift is 2");
+        System.out.println("Please enter your age, must be over 18");
+    }
 
 }
